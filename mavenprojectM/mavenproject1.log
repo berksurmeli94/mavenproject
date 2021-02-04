@@ -1,0 +1,2394 @@
+DEBUG [InternalLoggerFactory.java:45] - Using SLF4J as the default logging framework
+DEBUG [ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.level: sımple
+DEBUG [ResourceLeakDetector.java:131] - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG [ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@fdefd3f
+DEBUG [PlatformDependent.java:1028] - Platform: Windows
+DEBUG [PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+DEBUG [PlatformDependent0.java:889] - Java version: 15
+DEBUG [PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+DEBUG [PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+DEBUG [PlatformDependent0.java:192] - java.nio.Buffer.address: available
+DEBUG [PlatformDependent0.java:266] - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at mavenpackageM.openWebsiteTest.testOpen(openWebsiteTest.java:15)
+	at mavenpackageM.AppTest.open(AppTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+DEBUG [PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+DEBUG [PlatformDependent0.java:390] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @51e5fc98
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at mavenpackageM.openWebsiteTest.testOpen(openWebsiteTest.java:15)
+	at mavenpackageM.AppTest.open(AppTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+DEBUG [PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG [PlatformDependent.java:1071] - sun.misc.Unsafe: available
+DEBUG [PlatformDependent.java:1173] - maxDirectMemory: 3196059648 bytes (maybe)
+DEBUG [PlatformDependent.java:1192] - -Dio.netty.tmpdir: C:\Users\MRSTAM~1\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [PlatformDependent.java:1271] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG [PlatformDependent.java:177] - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG [PlatformDependent.java:184] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG [CleanerJava9.java:71] - java.nio.ByteBuffer.cleaner(): available
+DEBUG [PlatformDependent.java:204] - -Dio.netty.noPreferDirect: false
+DEBUG [PlatformDependent.java:932] - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG [InternalThreadLocalMap.java:56] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG [InternalThreadLocalMap.java:59] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG [JdkSslContext.java:96] - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+DEBUG [JdkSslContext.java:97] - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+DEBUG [MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 8
+DEBUG [NioEventLoop.java:106] - -Dio.netty.noKeySetOptimization: false
+DEBUG [NioEventLoop.java:107] - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 8
+DEBUG [PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 8
+DEBUG [PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+DEBUG [PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+DEBUG [PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG [PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG [PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG [ByteBufUtil.java:87] - -Dio.netty.allocator.type: pooled
+DEBUG [ByteBufUtil.java:96] - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG [ByteBufUtil.java:99] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [DefaultChannelId.java:79] - -Dio.netty.processId: 7508 (auto-detected)
+DEBUG [NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+DEBUG [NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+DEBUG [NetUtil.java:224] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG [DefaultChannelId.java:101] - -Dio.netty.machineId: fc:3f:db:ff:fe:a5:23:b6 (auto-detected)
+DEBUG [AbstractByteBuf.java:63] - -Dio.netty.buffer.checkAccessible: true
+DEBUG [AbstractByteBuf.java:64] - -Dio.netty.buffer.checkBounds: true
+DEBUG [ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@13ec08e5
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]' for 'POST' to '/session'
+DEBUG [Recycler.java:100] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG [Recycler.java:101] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG [Recycler.java:102] - -Dio.netty.recycler.linkCapacity: 16
+DEBUG [Recycler.java:103] - -Dio.netty.recycler.ratio: 8
+DEBUG [Recycler.java:104] - -Dio.netty.recycler.delayedQueue.ratio: 8
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:13828
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 756
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:13828 for channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x740bbeb8, L:/127.0.0.1:53324 - R:localhost/127.0.0.1:53312]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:53312
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:53312 for channel [id: 0x740bbeb8, L:/127.0.0.1:53324 - R:localhost/127.0.0.1:53312]
+DEBUG [ThreadLocalRandom.java:212] - -Dio.netty.initialSeedUniquifier: 0xf699455b5a1715c6
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xea48cf12, L:/127.0.0.1:53325 - R:localhost/127.0.0.1:53312]' for 'GET' to '/devtools/browser/8a119c61-ae6c-4d05-911c-d09996631172'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/8a119c61-ae6c-4d05-911c-d09996631172 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: lZdT3SSVOrNUhFGSnFqTqg==
+sec-websocket-version: 13
+origin: http://localhost:53312
+host: localhost:53312
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: dS1oMrnmeelT+VWlNIDPq6Odel4=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]' for 'POST' to 'http://localhost:13828/session/d4f18214b72c45a96659420543f741f4/window/maximize'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828] for POST '/session/d4f18214b72c45a96659420543f741f4/window/maximize'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/d4f18214b72c45a96659420543f741f4/window/maximize HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:13828
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 51
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:13828 for channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]' for 'POST' to 'http://localhost:13828/session/d4f18214b72c45a96659420543f741f4/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828] for POST '/session/d4f18214b72c45a96659420543f741f4/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53312 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/d4f18214b72c45a96659420543f741f4/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:13828
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:13828 for channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]' for 'GET' to 'http://localhost:13828/session/d4f18214b72c45a96659420543f741f4/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828] for GET '/session/d4f18214b72c45a96659420543f741f4/url'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/d4f18214b72c45a96659420543f741f4/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:13828
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:13828 for channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0xea48cf12, L:/127.0.0.1:53325 ! R:localhost/127.0.0.1:53312] with attribute NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@289f5685,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@20256b1e,
+	future=java.util.concurrent.CompletableFuture@3918ff96[Completed normally],
+	uri=ws://localhost:53312/devtools/browser/8a119c61-ae6c-4d05-911c-d09996631172,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1612409213594}
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]' for 'DELETE' to 'http://localhost:13828/session/d4f18214b72c45a96659420543f741f4'
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0xea48cf12, L:/127.0.0.1:53325 ! R:localhost/127.0.0.1:53312] 
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828] for DELETE '/session/d4f18214b72c45a96659420543f741f4'
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0x740bbeb8, L:/127.0.0.1:53324 - R:localhost/127.0.0.1:53312]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x740bbeb8, L:/127.0.0.1:53324 - R:localhost/127.0.0.1:53312] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x740bbeb8, L:/127.0.0.1:53324 ! R:localhost/127.0.0.1:53312] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/d4f18214b72c45a96659420543f741f4 HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:13828
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:13828 for channel [id: 0x9ece7929, L:/127.0.0.1:53306 - R:localhost/127.0.0.1:13828]
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x9ece7929, L:/127.0.0.1:53306 ! R:localhost/127.0.0.1:13828] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:13828 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53312 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x9ece7929, L:/127.0.0.1:53306 ! R:localhost/127.0.0.1:13828] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x9ece7929, L:/127.0.0.1:53306 ! R:localhost/127.0.0.1:13828]
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x740bbeb8, L:/127.0.0.1:53324 ! R:localhost/127.0.0.1:53312] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x740bbeb8, L:/127.0.0.1:53324 ! R:localhost/127.0.0.1:53312]
+DEBUG [AbstractLogger.java:403] - Closed 2 connections out of 2 in 7 ms
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to '/session'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 758
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x44c5a033, L:/127.0.0.1:53400 - R:localhost/127.0.0.1:53391]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:53391
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:53391 for channel [id: 0x44c5a033, L:/127.0.0.1:53400 - R:localhost/127.0.0.1:53391]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xe6f134b4, L:/127.0.0.1:53401 - R:localhost/127.0.0.1:53391]' for 'GET' to '/devtools/browser/24b5000c-aaf7-4931-a960-e2fdb1495a34'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/24b5000c-aaf7-4931-a960-e2fdb1495a34 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: KexKu78YFWmWgbDjPTvQFw==
+sec-websocket-version: 13
+origin: http://localhost:53391
+host: localhost:53391
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: XMLi32rUQAzrqIEGqY6NnHUx2ng=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/window/maximize'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/window/maximize'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/window/maximize HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 51
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 69
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 73
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element/7f512281-6f7f-4bc8-96e0-146ee19547bd/value'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/element/7f512281-6f7f-4bc8-96e0-146ee19547bd/value'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/element/7f512281-6f7f-4bc8-96e0-146ee19547bd/value HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 301
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 73
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element/d11614ed-4302-4097-acb2-31c63d130890/value'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/element/d11614ed-4302-4097-acb2-31c63d130890/value'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/element/d11614ed-4302-4097-acb2-31c63d130890/value HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 191
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/execute/sync'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 49256
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'GET' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element/3615e66a-a414-4fe9-a549-fe234dadcb9d/enabled'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for GET '/session/6b2a98092dc228474235a05783a2c10f/element/3615e66a-a414-4fe9-a549-fe234dadcb9d/enabled'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/6b2a98092dc228474235a05783a2c10f/element/3615e66a-a414-4fe9-a549-fe234dadcb9d/enabled HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+ INFO [loginProcess.java:32] - [[ChromeDriver: chrome on WINDOWS (6b2a98092dc228474235a05783a2c10f)] -> xpath: //*[@id='gg-login-enter']]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'POST' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/element/3615e66a-a414-4fe9-a549-fe234dadcb9d/click'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for POST '/session/6b2a98092dc228474235a05783a2c10f/element/3615e66a-a414-4fe9-a549-fe234dadcb9d/click'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6b2a98092dc228474235a05783a2c10f/element/3615e66a-a414-4fe9-a549-fe234dadcb9d/click HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'GET' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for GET '/session/6b2a98092dc228474235a05783a2c10f/url'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/6b2a98092dc228474235a05783a2c10f/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+ERROR [loginProcess.java:39] - Eveeet burada birkaç senaryo söz konusu ama olmadı yani!
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]' for 'DELETE' to 'http://localhost:26662/session/6b2a98092dc228474235a05783a2c10f'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662] for DELETE '/session/6b2a98092dc228474235a05783a2c10f'
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0xe6f134b4, L:/127.0.0.1:53401 ! R:localhost/127.0.0.1:53391] with attribute NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@66102855,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@2312baf3,
+	future=java.util.concurrent.CompletableFuture@dcd34df[Completed normally],
+	uri=ws://localhost:53391/devtools/browser/24b5000c-aaf7-4931-a960-e2fdb1495a34,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1612409220693}
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0xe6f134b4, L:/127.0.0.1:53401 ! R:localhost/127.0.0.1:53391] 
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0x44c5a033, L:/127.0.0.1:53400 - R:localhost/127.0.0.1:53391]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x44c5a033, L:/127.0.0.1:53400 - R:localhost/127.0.0.1:53391] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x44c5a033, L:/127.0.0.1:53400 ! R:localhost/127.0.0.1:53391] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/6b2a98092dc228474235a05783a2c10f HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:26662
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:26662 for channel [id: 0x68ed90ab, L:/127.0.0.1:53386 - R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53391 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:26662 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x44c5a033, L:/127.0.0.1:53400 ! R:localhost/127.0.0.1:53391] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x44c5a033, L:/127.0.0.1:53400 ! R:localhost/127.0.0.1:53391]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 2 in 1 ms
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x68ed90ab, L:/127.0.0.1:53386 ! R:localhost/127.0.0.1:26662] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:26662 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 ! R:localhost/127.0.0.1:26662] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x68ed90ab, L:/127.0.0.1:53386 ! R:localhost/127.0.0.1:26662]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 1 in 1 ms
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to '/session'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 757
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xe3cc066f, L:/127.0.0.1:53492 - R:localhost/127.0.0.1:53480]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:53480
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:53480 for channel [id: 0xe3cc066f, L:/127.0.0.1:53492 - R:localhost/127.0.0.1:53480]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x289e290a, L:/127.0.0.1:53493 - R:localhost/127.0.0.1:53480]' for 'GET' to '/devtools/browser/af8b1a68-e99f-4ec2-859b-19fcdd2d6979'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/af8b1a68-e99f-4ec2-859b-19fcdd2d6979 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: bMqvuU0pvA5g3fEI5Y2oGw==
+sec-websocket-version: 13
+origin: http://localhost:53480
+host: localhost:53480
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: YHBoNtbkApPe+Zy2bra7Osmt9DY=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 174
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/element/794a5963-cf49-47e9-809b-6e8319b498cb/value'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/element/794a5963-cf49-47e9-809b-6e8319b498cb/value'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/element/794a5963-cf49-47e9-809b-6e8319b498cb/value HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 181
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 163
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/execute/sync'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 49256
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'GET' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/element/3d5d3146-26f6-4072-b919-e8e397e55684/enabled'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for GET '/session/4daa16965180fc142b4b6268567ae754/element/3d5d3146-26f6-4072-b919-e8e397e55684/enabled'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/4daa16965180fc142b4b6268567ae754/element/3d5d3146-26f6-4072-b919-e8e397e55684/enabled HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+ INFO [aramaTest.java:27] - [[ChromeDriver: chrome on WINDOWS (4daa16965180fc142b4b6268567ae754)] -> xpath: //*[@id='main-header']/div[3]/div/div/div/div[2]/form/div/div[2]/button]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 163
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/element/3d5d3146-26f6-4072-b919-e8e397e55684/click'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/element/3d5d3146-26f6-4072-b919-e8e397e55684/click'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/element/3d5d3146-26f6-4072-b919-e8e397e55684/click HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 124
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'POST' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for POST '/session/4daa16965180fc142b4b6268567ae754/execute/sync'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/4daa16965180fc142b4b6268567ae754/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 48543
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+ INFO [aramaTest.java:34] - Arama Yapılamadı!
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]' for 'DELETE' to 'http://localhost:20208/session/4daa16965180fc142b4b6268567ae754'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208] for DELETE '/session/4daa16965180fc142b4b6268567ae754'
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0xe3cc066f, L:/127.0.0.1:53492 - R:localhost/127.0.0.1:53480]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0xe3cc066f, L:/127.0.0.1:53492 - R:localhost/127.0.0.1:53480] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0xe3cc066f, L:/127.0.0.1:53492 ! R:localhost/127.0.0.1:53480] with attribute DISCARD
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0x289e290a, L:/127.0.0.1:53493 - R:localhost/127.0.0.1:53480]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Was unable to recover Future: NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@50665f83,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@bac5edc,
+	future=java.util.concurrent.CompletableFuture@44781635[Completed normally],
+	uri=ws://localhost:53480/devtools/browser/af8b1a68-e99f-4ec2-859b-19fcdd2d6979,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1612409245241}
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x289e290a, L:/127.0.0.1:53493 - R:localhost/127.0.0.1:53480] 
+ WARN [AbstractLogger.java:382] - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x289e290a, L:/127.0.0.1:53493 ! R:localhost/127.0.0.1:53480] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x289e290a, L:/127.0.0.1:53493 ! R:localhost/127.0.0.1:53480] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/4daa16965180fc142b4b6268567ae754 HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:20208
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:20208 for channel [id: 0x591f09e3, L:/127.0.0.1:53475 - R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53480 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:20208 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0xe3cc066f, L:/127.0.0.1:53492 ! R:localhost/127.0.0.1:53480] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0xe3cc066f, L:/127.0.0.1:53492 ! R:localhost/127.0.0.1:53480]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 2 in 2 ms
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x591f09e3, L:/127.0.0.1:53475 ! R:localhost/127.0.0.1:20208] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:20208 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x591f09e3, L:/127.0.0.1:53475 ! R:localhost/127.0.0.1:20208] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x591f09e3, L:/127.0.0.1:53475 ! R:localhost/127.0.0.1:20208]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 1 in 1 ms
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]' for 'POST' to '/session'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:49020
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 756
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:49020 for channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xc72ca58e, L:/127.0.0.1:53596 - R:localhost/127.0.0.1:53586]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:53586
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:53586 for channel [id: 0xc72ca58e, L:/127.0.0.1:53596 - R:localhost/127.0.0.1:53586]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x9d56c099, L:/127.0.0.1:53597 - R:localhost/127.0.0.1:53586]' for 'GET' to '/devtools/browser/8a9fb532-e986-4763-baa4-af53977a5115'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/8a9fb532-e986-4763-baa4-af53977a5115 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: EL3RNP8VsI6eqpfcH3O6UA==
+sec-websocket-version: 13
+origin: http://localhost:53586
+host: localhost:53586
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: 3F6NHL18GatzGU3MC+HCN8bhaP8=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]' for 'POST' to 'http://localhost:49020/session/10cb9b347d60e602020767cf61d2ef45/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020] for POST '/session/10cb9b347d60e602020767cf61d2ef45/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/10cb9b347d60e602020767cf61d2ef45/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 93
+Content-Type: application/json; charset=utf-8
+host: localhost:49020
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:49020 for channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]' for 'POST' to 'http://localhost:49020/session/10cb9b347d60e602020767cf61d2ef45/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020] for POST '/session/10cb9b347d60e602020767cf61d2ef45/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/10cb9b347d60e602020767cf61d2ef45/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 65
+Content-Type: application/json; charset=utf-8
+host: localhost:49020
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:49020 for channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]' for 'POST' to 'http://localhost:49020/session/10cb9b347d60e602020767cf61d2ef45/element/0add2ce8-cc0a-4008-a1f9-95c0c09d9c63/click'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020] for POST '/session/10cb9b347d60e602020767cf61d2ef45/element/0add2ce8-cc0a-4008-a1f9-95c0c09d9c63/click'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/10cb9b347d60e602020767cf61d2ef45/element/0add2ce8-cc0a-4008-a1f9-95c0c09d9c63/click HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:49020
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:49020 for channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]' for 'POST' to 'http://localhost:49020/session/10cb9b347d60e602020767cf61d2ef45/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020] for POST '/session/10cb9b347d60e602020767cf61d2ef45/execute/sync'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:53586 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/10cb9b347d60e602020767cf61d2ef45/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 84
+Content-Type: application/json; charset=utf-8
+host: localhost:49020
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:49020 for channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]' for 'POST' to 'http://localhost:49020/session/10cb9b347d60e602020767cf61d2ef45/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020] for POST '/session/10cb9b347d60e602020767cf61d2ef45/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/10cb9b347d60e602020767cf61d2ef45/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 146
+Content-Type: application/json; charset=utf-8
+host: localhost:49020
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:49020 for channel [id: 0x095e6361, L:/127.0.0.1:53580 - R:localhost/127.0.0.1:49020]
+DEBUG [PoolThreadCache.java:229] - Freed 12 thread-local buffer(s) from thread: AsyncHttpClient-1-2
+DEBUG [PoolThreadCache.java:229] - Freed 4 thread-local buffer(s) from thread: AsyncHttpClient-1-7
+DEBUG [PoolThreadCache.java:229] - Freed 18 thread-local buffer(s) from thread: AsyncHttpClient-1-8
+DEBUG [PoolThreadCache.java:229] - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-6
+DEBUG [PoolThreadCache.java:229] - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-9
+DEBUG [InternalLoggerFactory.java:45] - Using SLF4J as the default logging framework
+DEBUG [ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.level: sımple
+DEBUG [ResourceLeakDetector.java:131] - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG [ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6156496
+DEBUG [PlatformDependent.java:1028] - Platform: Windows
+DEBUG [PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+DEBUG [PlatformDependent0.java:889] - Java version: 15
+DEBUG [PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+DEBUG [PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+DEBUG [PlatformDependent0.java:192] - java.nio.Buffer.address: available
+DEBUG [PlatformDependent0.java:266] - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at mavenpackageM.openWebsiteTest.testOpen(openWebsiteTest.java:15)
+	at mavenpackageM.AppTest.open(AppTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+DEBUG [PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+DEBUG [PlatformDependent0.java:390] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6dbb137d
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:693)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at mavenpackageM.openWebsiteTest.testOpen(openWebsiteTest.java:15)
+	at mavenpackageM.AppTest.open(AppTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+DEBUG [PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG [PlatformDependent.java:1071] - sun.misc.Unsafe: available
+DEBUG [PlatformDependent.java:1173] - maxDirectMemory: 3196059648 bytes (maybe)
+DEBUG [PlatformDependent.java:1192] - -Dio.netty.tmpdir: C:\Users\MRSTAM~1\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [PlatformDependent.java:1271] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG [PlatformDependent.java:177] - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG [PlatformDependent.java:184] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG [CleanerJava9.java:71] - java.nio.ByteBuffer.cleaner(): available
+DEBUG [PlatformDependent.java:204] - -Dio.netty.noPreferDirect: false
+DEBUG [PlatformDependent.java:932] - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG [InternalThreadLocalMap.java:56] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG [InternalThreadLocalMap.java:59] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG [JdkSslContext.java:96] - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+DEBUG [JdkSslContext.java:97] - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+DEBUG [MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 8
+DEBUG [NioEventLoop.java:106] - -Dio.netty.noKeySetOptimization: false
+DEBUG [NioEventLoop.java:107] - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 8
+DEBUG [PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 8
+DEBUG [PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+DEBUG [PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+DEBUG [PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG [PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG [PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG [ByteBufUtil.java:87] - -Dio.netty.allocator.type: pooled
+DEBUG [ByteBufUtil.java:96] - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG [ByteBufUtil.java:99] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [DefaultChannelId.java:79] - -Dio.netty.processId: 18724 (auto-detected)
+DEBUG [NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+DEBUG [NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+DEBUG [NetUtil.java:224] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG [DefaultChannelId.java:101] - -Dio.netty.machineId: fc:3f:db:ff:fe:a5:23:b6 (auto-detected)
+DEBUG [AbstractByteBuf.java:63] - -Dio.netty.buffer.checkAccessible: true
+DEBUG [AbstractByteBuf.java:64] - -Dio.netty.buffer.checkBounds: true
+DEBUG [ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@560f1855
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]' for 'POST' to '/session'
+DEBUG [Recycler.java:100] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG [Recycler.java:101] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG [Recycler.java:102] - -Dio.netty.recycler.linkCapacity: 16
+DEBUG [Recycler.java:103] - -Dio.netty.recycler.ratio: 8
+DEBUG [Recycler.java:104] - -Dio.netty.recycler.delayedQueue.ratio: 8
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:7826
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 757
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7826 for channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:7826 : 1
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x46c2efc1, L:/127.0.0.1:54149 - R:localhost/127.0.0.1:54137]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:54137
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:54137 for channel [id: 0x46c2efc1, L:/127.0.0.1:54149 - R:localhost/127.0.0.1:54137]
+DEBUG [ThreadLocalRandom.java:212] - -Dio.netty.initialSeedUniquifier: 0x1783d655e98f6688
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xdc77a85e, L:/127.0.0.1:54151 - R:localhost/127.0.0.1:54137]' for 'GET' to '/devtools/browser/89001077-6431-48be-80e2-ae9e8bf57fa1'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/89001077-6431-48be-80e2-ae9e8bf57fa1 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: xrGnyS1q7HS8EGtfe1CgAg==
+sec-websocket-version: 13
+origin: http://localhost:54137
+host: localhost:54137
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: iA7Jg+CGOplVLo0xjUjqpvkBj1g=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]' for 'POST' to 'http://localhost:7826/session/6903144b9da102994c864070429164bc/window/maximize'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826] for POST '/session/6903144b9da102994c864070429164bc/window/maximize'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6903144b9da102994c864070429164bc/window/maximize HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:7826
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 51
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7826 for channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]' for 'POST' to 'http://localhost:7826/session/6903144b9da102994c864070429164bc/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826] for POST '/session/6903144b9da102994c864070429164bc/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54137 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54137 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54137 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54137 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/6903144b9da102994c864070429164bc/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:7826
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7826 for channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]' for 'GET' to 'http://localhost:7826/session/6903144b9da102994c864070429164bc/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826] for GET '/session/6903144b9da102994c864070429164bc/url'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/6903144b9da102994c864070429164bc/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:7826
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7826 for channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]' for 'DELETE' to 'http://localhost:7826/session/6903144b9da102994c864070429164bc'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826] for DELETE '/session/6903144b9da102994c864070429164bc'
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0xdc77a85e, L:/127.0.0.1:54151 ! R:localhost/127.0.0.1:54137] with attribute NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@532d3af8,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@29d7e1a2,
+	future=java.util.concurrent.CompletableFuture@57d0ca51[Completed normally],
+	uri=ws://localhost:54137/devtools/browser/89001077-6431-48be-80e2-ae9e8bf57fa1,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1612409666937}
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0xdc77a85e, L:/127.0.0.1:54151 ! R:localhost/127.0.0.1:54137] 
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0x46c2efc1, L:/127.0.0.1:54149 - R:localhost/127.0.0.1:54137]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x46c2efc1, L:/127.0.0.1:54149 - R:localhost/127.0.0.1:54137] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x46c2efc1, L:/127.0.0.1:54149 ! R:localhost/127.0.0.1:54137] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/6903144b9da102994c864070429164bc HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:7826
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7826 for channel [id: 0x39a567dc, L:/127.0.0.1:54132 - R:localhost/127.0.0.1:7826]
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x39a567dc, L:/127.0.0.1:54132 ! R:localhost/127.0.0.1:7826] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:7826 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54137 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x39a567dc, L:/127.0.0.1:54132 ! R:localhost/127.0.0.1:7826] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x39a567dc, L:/127.0.0.1:54132 ! R:localhost/127.0.0.1:7826]
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x46c2efc1, L:/127.0.0.1:54149 ! R:localhost/127.0.0.1:54137] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x46c2efc1, L:/127.0.0.1:54149 ! R:localhost/127.0.0.1:54137]
+DEBUG [AbstractLogger.java:403] - Closed 2 connections out of 2 in 2 ms
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to '/session'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 758
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x2f781653, L:/127.0.0.1:54229 - R:localhost/127.0.0.1:54217]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:54217
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:54217 for channel [id: 0x2f781653, L:/127.0.0.1:54229 - R:localhost/127.0.0.1:54217]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xbc93d598, L:/127.0.0.1:54230 - R:localhost/127.0.0.1:54217]' for 'GET' to '/devtools/browser/fd028e4c-218f-492c-bc96-0ba0581cf563'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/fd028e4c-218f-492c-bc96-0ba0581cf563 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: nTLmin2ihL5U3gibWVTMBw==
+sec-websocket-version: 13
+origin: http://localhost:54217
+host: localhost:54217
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: ricBL6KhVG795hkynCLOicju+vU=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/window/maximize'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/window/maximize'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/window/maximize HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 51
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 69
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 73
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element/62bbb4fc-e8c8-4a72-a866-7c1a7e976b41/value'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/element/62bbb4fc-e8c8-4a72-a866-7c1a7e976b41/value'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/element/62bbb4fc-e8c8-4a72-a866-7c1a7e976b41/value HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 301
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 73
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element/1d2823a1-7b8b-4918-843e-a753b02fd935/value'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/element/1d2823a1-7b8b-4918-843e-a753b02fd935/value'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/element/1d2823a1-7b8b-4918-843e-a753b02fd935/value HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 191
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/execute/sync'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 49256
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'GET' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element/bd8e64d7-418e-4803-a699-36c4dbfa2b53/enabled'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for GET '/session/f00296a53015b50a5463137340cac48a/element/bd8e64d7-418e-4803-a699-36c4dbfa2b53/enabled'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f00296a53015b50a5463137340cac48a/element/bd8e64d7-418e-4803-a699-36c4dbfa2b53/enabled HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+ INFO [loginProcess.java:32] - [[ChromeDriver: chrome on WINDOWS (f00296a53015b50a5463137340cac48a)] -> xpath: //*[@id='gg-login-enter']]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 72
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'POST' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/element/bd8e64d7-418e-4803-a699-36c4dbfa2b53/click'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for POST '/session/f00296a53015b50a5463137340cac48a/element/bd8e64d7-418e-4803-a699-36c4dbfa2b53/click'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f00296a53015b50a5463137340cac48a/element/bd8e64d7-418e-4803-a699-36c4dbfa2b53/click HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'GET' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for GET '/session/f00296a53015b50a5463137340cac48a/url'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f00296a53015b50a5463137340cac48a/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 41
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+ERROR [loginProcess.java:39] - Eveeet burada birkaç senaryo söz konusu ama olmadı yani!
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]' for 'DELETE' to 'http://localhost:14042/session/f00296a53015b50a5463137340cac48a'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] for DELETE '/session/f00296a53015b50a5463137340cac48a'
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0xbc93d598, L:/127.0.0.1:54230 ! R:localhost/127.0.0.1:54217] with attribute NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@363263f1,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@7330eb53,
+	future=java.util.concurrent.CompletableFuture@1f526bb4[Completed normally],
+	uri=ws://localhost:54217/devtools/browser/fd028e4c-218f-492c-bc96-0ba0581cf563,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1612409674092}
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0xbc93d598, L:/127.0.0.1:54230 ! R:localhost/127.0.0.1:54217] 
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0x2f781653, L:/127.0.0.1:54229 - R:localhost/127.0.0.1:54217]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x2f781653, L:/127.0.0.1:54229 - R:localhost/127.0.0.1:54217] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x2f781653, L:/127.0.0.1:54229 ! R:localhost/127.0.0.1:54217] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/f00296a53015b50a5463137340cac48a HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:14042
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:14042 for channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54217 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:14042 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x2f781653, L:/127.0.0.1:54229 ! R:localhost/127.0.0.1:54217] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x2f781653, L:/127.0.0.1:54229 ! R:localhost/127.0.0.1:54217]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 2 in 0 ms
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0xc86345a8, L:/127.0.0.1:54212 - R:localhost/127.0.0.1:14042] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0xc86345a8, L:/127.0.0.1:54212 ! R:localhost/127.0.0.1:14042] with attribute DISCARD
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to '/session'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:14042 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0xc86345a8, L:/127.0.0.1:54212 ! R:localhost/127.0.0.1:14042] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0xc86345a8, L:/127.0.0.1:54212 ! R:localhost/127.0.0.1:14042]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 1 in 1 ms
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 756
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xbfd98e46, L:/127.0.0.1:54322 - R:localhost/127.0.0.1:54312]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:54312
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:54312 for channel [id: 0xbfd98e46, L:/127.0.0.1:54322 - R:localhost/127.0.0.1:54312]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x72e3a0f6, L:/127.0.0.1:54323 - R:localhost/127.0.0.1:54312]' for 'GET' to '/devtools/browser/04957834-59bf-4c3a-8678-917075c2b0b5'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/04957834-59bf-4c3a-8678-917075c2b0b5 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: 4J0Qf3wyheGq/gFY72P95A==
+sec-websocket-version: 13
+origin: http://localhost:54312
+host: localhost:54312
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: FYFyqGwBFSlp5NORSRe5TCVzt9c=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 59
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 174
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/element/3e634c84-42f4-4457-9b12-28e614cb99c1/value'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/element/3e634c84-42f4-4457-9b12-28e614cb99c1/value'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/element/3e634c84-42f4-4457-9b12-28e614cb99c1/value HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 181
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 163
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/execute/sync'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 49256
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'GET' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/element/ec49fc59-f00e-4f59-b5de-911fb24fe425/enabled'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for GET '/session/b5b28051f8986582be4c02ecba51dc03/element/ec49fc59-f00e-4f59-b5de-911fb24fe425/enabled'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/b5b28051f8986582be4c02ecba51dc03/element/ec49fc59-f00e-4f59-b5de-911fb24fe425/enabled HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+ INFO [aramaTest.java:27] - [[ChromeDriver: chrome on WINDOWS (b5b28051f8986582be4c02ecba51dc03)] -> xpath: //*[@id='main-header']/div[3]/div/div/div/div[2]/form/div/div[2]/button]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 163
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/element/ec49fc59-f00e-4f59-b5de-911fb24fe425/click'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/element/ec49fc59-f00e-4f59-b5de-911fb24fe425/click'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/element/ec49fc59-f00e-4f59-b5de-911fb24fe425/click HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 124
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'POST' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for POST '/session/b5b28051f8986582be4c02ecba51dc03/execute/sync'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/b5b28051f8986582be4c02ecba51dc03/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 48543
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+ INFO [aramaTest.java:34] - Arama Yapılamadı!
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]' for 'DELETE' to 'http://localhost:7364/session/b5b28051f8986582be4c02ecba51dc03'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] for DELETE '/session/b5b28051f8986582be4c02ecba51dc03'
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x72e3a0f6, L:/127.0.0.1:54323 ! R:localhost/127.0.0.1:54312] with attribute NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@1a3871eb,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@19d9c259,
+	future=java.util.concurrent.CompletableFuture@3300482d[Completed normally],
+	uri=ws://localhost:54312/devtools/browser/04957834-59bf-4c3a-8678-917075c2b0b5,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1612409686256}
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x72e3a0f6, L:/127.0.0.1:54323 ! R:localhost/127.0.0.1:54312] 
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0xbfd98e46, L:/127.0.0.1:54322 - R:localhost/127.0.0.1:54312]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0xbfd98e46, L:/127.0.0.1:54322 - R:localhost/127.0.0.1:54312] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0xbfd98e46, L:/127.0.0.1:54322 ! R:localhost/127.0.0.1:54312] with attribute DISCARD
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/b5b28051f8986582be4c02ecba51dc03 HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:7364
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:7364 for channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54312 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:7364 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0xbfd98e46, L:/127.0.0.1:54322 ! R:localhost/127.0.0.1:54312] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0xbfd98e46, L:/127.0.0.1:54322 ! R:localhost/127.0.0.1:54312]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 2 in 1 ms
+DEBUG [AbstractLogger.java:391] - Unexpected I/O exception on channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+DEBUG [AbstractLogger.java:386] - Closing Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 - R:localhost/127.0.0.1:7364] 
+DEBUG [AbstractLogger.java:393] - Channel Closed: [id: 0x7e5508bb, L:/127.0.0.1:54305 ! R:localhost/127.0.0.1:7364] with attribute DISCARD
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]' for 'POST' to '/session'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:7364 : 1
+DEBUG [AbstractLogger.java:403] - Adding Candidate expired Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 ! R:localhost/127.0.0.1:7364] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+DEBUG [AbstractLogger.java:386] - Closing Idle Channel [id: 0x7e5508bb, L:/127.0.0.1:54305 ! R:localhost/127.0.0.1:7364]
+DEBUG [AbstractLogger.java:403] - Closed 1 connections out of 1 in 1 ms
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 365
+Content-Type: application/json; charset=utf-8
+host: localhost:34439
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 756
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:34439 for channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0xc7566d02, L:/127.0.0.1:54427 - R:localhost/127.0.0.1:54416]' for 'GET' to '/json/version'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+host: localhost:54416
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 426
+Content-Type: application/json; charset=UTF-8
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:54416 for channel [id: 0xc7566d02, L:/127.0.0.1:54427 - R:localhost/127.0.0.1:54416]
+DEBUG [AbstractLogger.java:403] - Using new Channel '[id: 0x4d6826d2, L:/127.0.0.1:54428 - R:localhost/127.0.0.1:54416]' for 'GET' to '/devtools/browser/963502ae-8eb2-409f-b84b-84284cbdc122'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/963502ae-8eb2-409f-b84b-84284cbdc122 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: l9RiLjKEmHYippleahox/w==
+sec-websocket-version: 13
+origin: http://localhost:54416
+host: localhost:54416
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: kQJhIxQLBOe9EQgBCRGSerx4gmQ=
+
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]' for 'POST' to 'http://localhost:34439/session/a8a3debaeb368de50ac21230876da491/url'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439] for POST '/session/a8a3debaeb368de50ac21230876da491/url'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a8a3debaeb368de50ac21230876da491/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 93
+Content-Type: application/json; charset=utf-8
+host: localhost:34439
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:34439 for channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]' for 'POST' to 'http://localhost:34439/session/a8a3debaeb368de50ac21230876da491/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439] for POST '/session/a8a3debaeb368de50ac21230876da491/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a8a3debaeb368de50ac21230876da491/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 65
+Content-Type: application/json; charset=utf-8
+host: localhost:34439
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:34439 for channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]' for 'POST' to 'http://localhost:34439/session/a8a3debaeb368de50ac21230876da491/element/785ab63c-67ef-47fb-87fa-635420250beb/click'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439] for POST '/session/a8a3debaeb368de50ac21230876da491/element/785ab63c-67ef-47fb-87fa-635420250beb/click'
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - Entry count for : http://localhost:54416 : 1
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a8a3debaeb368de50ac21230876da491/element/785ab63c-67ef-47fb-87fa-635420250beb/click HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:34439
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:34439 for channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]' for 'POST' to 'http://localhost:34439/session/a8a3debaeb368de50ac21230876da491/execute/sync'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439] for POST '/session/a8a3debaeb368de50ac21230876da491/execute/sync'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a8a3debaeb368de50ac21230876da491/execute/sync HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 84
+Content-Type: application/json; charset=utf-8
+host: localhost:34439
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:34439 for channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]
+DEBUG [AbstractLogger.java:403] - Using pooled Channel '[id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]' for 'POST' to 'http://localhost:34439/session/a8a3debaeb368de50ac21230876da491/element'
+DEBUG [AbstractLogger.java:403] - Using open Channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439] for POST '/session/a8a3debaeb368de50ac21230876da491/element'
+DEBUG [AbstractLogger.java:393] - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/a8a3debaeb368de50ac21230876da491/element HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-7 (java windows)
+Content-Length: 146
+Content-Type: application/json; charset=utf-8
+host: localhost:34439
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 88
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+DEBUG [AbstractLogger.java:393] - Adding key: http://localhost:34439 for channel [id: 0xd0f7d81f, L:/127.0.0.1:54409 - R:localhost/127.0.0.1:34439]
+DEBUG [PoolThreadCache.java:229] - Freed 12 thread-local buffer(s) from thread: AsyncHttpClient-1-2
+DEBUG [PoolThreadCache.java:229] - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-6
+DEBUG [PoolThreadCache.java:229] - Freed 4 thread-local buffer(s) from thread: AsyncHttpClient-1-7
+DEBUG [PoolThreadCache.java:229] - Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-9
+DEBUG [PoolThreadCache.java:229] - Freed 18 thread-local buffer(s) from thread: AsyncHttpClient-1-8
